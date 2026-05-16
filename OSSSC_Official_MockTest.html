@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>OSSSC CRE-IV Mock Test 2026 | Classes and Information</title>
+<style>
+:root{--font:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;--font-od:'Noto Sans Oriya','Noto Sans',sans-serif;--navy:#1C3A5C;--navy2:#0D2137;--blue:#1565C0;--blue-lt:#E3F2FD;--ans:#2E7D32;--ans-bg:#E8F5E9;--nans:#C62828;--nans-bg:#FFEBEE;--nvis:#546E7A;--nvis-bg:#ECEFF1;--border:#CFD8DC;--bg:#F0F4F8;--card:#fff;--text:#1A1A1A;--muted:#616161;--gold:#F9A825;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:14px;-webkit-tap-highlight-color:transparent;}
+#startScreen{min-height:100vh;}
+.s-top{background:var(--navy2);padding:14px;text-align:center;border-bottom:3px solid var(--gold);}
+.s-top .brand{font-size:10px;color:rgba(255,255,255,.5);letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;}
+.s-top h1{font-size:16px;font-weight:700;color:#fff;line-height:1.3;}
+.s-top p{font-size:11px;color:rgba(255,255,255,.55);margin-top:3px;}
+.s-body{max-width:560px;margin:0 auto;padding:14px 12px 90px;}
+.s-card{background:var(--card);border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,.09);overflow:hidden;margin-bottom:12px;}
+.s-hd{background:var(--blue);color:#fff;padding:10px 14px;font-size:13px;font-weight:600;}
+.s-bd{padding:14px;}
+.igrid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px;}
+.ig{background:var(--blue-lt);border:1px solid #BBDEFB;border-radius:8px;padding:10px;text-align:center;}
+.ig .v{font-size:20px;font-weight:700;color:var(--blue);display:block;}
+.ig .l{font-size:10px;color:var(--muted);font-weight:500;}
+.stbl{width:100%;border-collapse:collapse;font-size:12.5px;}
+.stbl th{background:var(--navy);color:#fff;padding:7px 10px;text-align:left;font-size:11.5px;font-weight:600;}
+.stbl td{padding:7px 10px;border-bottom:1px solid var(--border);color:var(--text);}
+.stbl tr:nth-child(even) td{background:#F5F7FA;}
+.stbl tr:last-child td{border:none;font-weight:700;}
+.sdot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;}
+.rules{background:#FFFDE7;border:1px solid var(--gold);border-radius:8px;padding:12px 14px;font-size:12.5px;margin-top:10px;}
+.rules b{color:#E65100;display:block;margin-bottom:5px;}
+.rules li{margin-left:15px;margin-bottom:3px;}
+.cf label{font-size:10.5px;font-weight:600;color:var(--muted);display:block;margin-bottom:3px;text-transform:uppercase;letter-spacing:.4px;}
+.cf input{width:100%;border:1.5px solid var(--border);border-radius:7px;padding:9px 11px;font-family:var(--font);font-size:14px;color:var(--text);background:#fff;outline:none;margin-bottom:8px;transition:border .2s;}
+.cf input:focus{border-color:var(--blue);}
+.btn-begin{width:100%;background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;border:none;border-radius:9px;padding:14px;font-family:var(--font);font-size:15px;font-weight:700;cursor:pointer;margin-top:4px;}
+.btn-begin:active{transform:scale(.98);}
+.wm{text-align:center;padding:8px;font-size:10px;color:var(--muted);opacity:.7;}
+#examScreen{display:none;}
+.ehdr{background:var(--navy2);position:sticky;top:0;z-index:100;box-shadow:0 2px 10px rgba(0,0,0,.3);}
+.ehdr-row{display:flex;align-items:center;gap:7px;padding:7px 10px;border-bottom:1.5px solid rgba(249,168,37,.4);}
+.ehdr-logo{width:30px;height:30px;background:var(--gold);border-radius:7px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:12px;color:var(--navy2);flex-shrink:0;}
+.ehdr-txt{flex:1;min-width:0;}
+.ehdr-txt .t1{font-size:11.5px;font-weight:700;color:#F0FFF0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.ehdr-txt .t2{font-size:9px;color:rgba(255,255,255,.4);}
+.ehdr-timer{background:rgba(0,0,0,.3);border-radius:6px;padding:3px 7px;flex-shrink:0;text-align:center;}
+.tv{font-size:14px;font-weight:700;color:var(--gold);letter-spacing:1.5px;font-variant-numeric:tabular-nums;line-height:1.2;display:block;}
+.tl{font-size:8px;color:rgba(255,255,255,.4);}
+.cand-btn{width:28px;height:28px;background:var(--gold);border-radius:50%;border:none;cursor:pointer;font-size:11px;font-weight:700;color:var(--navy2);flex-shrink:0;display:flex;align-items:center;justify-content:center;}
+.btn-sub-hdr{background:linear-gradient(135deg,var(--gold),#FB8C00);color:var(--navy2);border:none;border-radius:7px;padding:0 11px;height:30px;font-family:var(--font);font-size:11.5px;font-weight:800;cursor:pointer;letter-spacing:.4px;text-transform:uppercase;flex-shrink:0;}
+.btn-sub-hdr:active{transform:scale(.96);}
+.tprog{height:2.5px;background:rgba(255,255,255,.1);}
+.tprog-fill{height:100%;background:var(--gold);transition:width 1s linear;width:100%;}
+.sec-wrap{background:#fff;border-bottom:2px solid var(--blue);position:sticky;top:57px;z-index:90;display:flex;align-items:center;}
+.sec-tabs{display:flex;overflow-x:auto;flex:1;scrollbar-width:none;}
+.sec-tabs::-webkit-scrollbar{display:none;}
+.stab{padding:0 10px;height:38px;font-size:11px;font-weight:600;border:none;background:none;cursor:pointer;white-space:nowrap;color:var(--muted);border-bottom:3px solid transparent;font-family:var(--font);flex-shrink:0;transition:all .18s;}
+.stab.active{color:var(--blue);border-bottom-color:var(--blue);background:var(--blue-lt);}
+.btn-pal{width:34px;height:38px;border:none;background:none;cursor:pointer;color:var(--muted);display:flex;align-items:center;justify-content:center;border-left:1px solid var(--border);flex-shrink:0;font-size:22px;font-weight:700;transition:background .18s;line-height:1;}
+.btn-pal:hover{background:var(--blue-lt);color:var(--blue);}
+.q-meta{background:var(--blue-lt);border-bottom:1px solid #BBDEFB;padding:5px 12px;display:flex;justify-content:space-between;align-items:center;}
+.q-meta .ql{font-size:11px;color:var(--blue);font-weight:500;}
+.q-meta .qr{font-size:11px;color:var(--muted);}
+.q-meta .qr b{color:var(--blue);}
+.q-body{max-width:700px;margin:0 auto;padding:10px 12px 80px;}
+.q-num-bar{background:var(--blue);color:#fff;padding:8px 13px;border-radius:7px 7px 0 0;font-size:12.5px;font-weight:600;display:flex;justify-content:space-between;align-items:center;}
+.q-num-bar .qsec{font-size:10px;opacity:.75;}
+.q-card{background:var(--card);border-radius:0 0 9px 9px;box-shadow:0 2px 12px rgba(0,0,0,.09);border:1px solid var(--border);border-top:none;overflow:hidden;}
+.q-text-wrap{padding:13px 13px 9px;}
+.q-text{font-size:14.5px;font-weight:500;line-height:1.72;color:var(--text);}
+.q-text.od{font-family:var(--font-od);font-size:14px;line-height:1.9;}
+.q-divider{height:2px;background:var(--blue);margin:0 13px 10px;}
+.opts{padding:0 12px 10px;display:flex;flex-direction:column;gap:8px;}
+.ropt{display:flex;align-items:flex-start;gap:9px;padding:10px 12px;border:1.5px solid var(--border);border-radius:8px;cursor:pointer;background:#FAFAFA;transition:all .12s;-webkit-user-select:none;user-select:none;}
+.ropt:hover:not(.locked){background:var(--blue-lt);border-color:#90CAF9;}
+.ropt.correct{background:var(--ans-bg)!important;border-color:var(--ans)!important;cursor:default;}
+.ropt.correct .rcirc{border-color:var(--ans);background:var(--ans);}
+.ropt.correct .rcirc::after{display:block;}
+.ropt.correct .rtxt{color:var(--ans);font-weight:600;}
+.ropt.correct .rlbl{color:var(--ans);}
+.ropt.wrong{background:var(--nans-bg)!important;border-color:var(--nans)!important;cursor:default;}
+.ropt.wrong .rcirc{border-color:var(--nans);background:var(--nans);}
+.ropt.wrong .rcirc::after{display:block;}
+.ropt.wrong .rtxt{color:var(--nans);font-weight:600;}
+.ropt.wrong .rlbl{color:var(--nans);}
+.ropt.locked{cursor:default;}
+.rcirc{width:20px;height:20px;border:2px solid #B0BEC5;border-radius:50%;flex-shrink:0;margin-top:1px;position:relative;background:#fff;transition:all .12s;}
+.rcirc::after{content:'';width:8px;height:8px;background:#fff;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:none;}
+.rlbl{font-size:12px;font-weight:700;color:var(--muted);width:17px;flex-shrink:0;margin-top:1px;}
+.rtxt{font-size:13.5px;color:var(--text);line-height:1.55;flex:1;}
+.rtxt.od{font-family:var(--font-od);font-size:13px;line-height:1.75;}
+.rico{margin-left:auto;font-size:16px;flex-shrink:0;}
+.expbox{margin:0 12px 12px;background:#FFFDE7;border:1px solid var(--gold);border-radius:8px;padding:10px 12px;display:none;animation:fi .22s ease;}
+.expbox.show{display:block;}
+@keyframes fi{from{opacity:0;transform:translateY(-3px)}to{opacity:1;transform:translateY(0)}}
+.exp-lbl{font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#E65100;margin-bottom:3px;}
+.exp-txt{font-size:13px;color:#3E2700;line-height:1.62;}
+.exp-txt.od{font-family:var(--font-od);font-size:12.5px;line-height:1.8;}
+.bot-nav{position:fixed;bottom:0;left:0;right:0;background:var(--navy2);padding:9px 12px;z-index:95;box-shadow:0 -3px 12px rgba(0,0,0,.2);border-top:1.5px solid rgba(249,168,37,.3);}
+.bot-nav-in{max-width:700px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:9px;}
+.btn-nav{background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.2);border-radius:9px;padding:11px;color:#fff;font-family:var(--font);font-size:14px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:5px;transition:background .15s;}
+.btn-nav:hover{background:rgba(255,255,255,.18);}
+.btn-nav:disabled{opacity:.28;cursor:default;}
+.cand-ov{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:200;display:none;}
+.cand-ov.on{display:block;}
+.cand-panel{position:fixed;top:0;right:0;width:min(260px,88vw);background:#fff;z-index:201;transform:translateX(100%);transition:transform .28s ease;overflow:hidden;box-shadow:-4px 0 20px rgba(0,0,0,.2);}
+.cand-panel.on{transform:translateX(0);}
+.cp-hd{background:var(--navy);padding:20px 14px;display:flex;align-items:center;gap:10px;}
+.cp-av{width:48px;height:48px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;color:var(--navy2);flex-shrink:0;}
+.cp-name{font-size:15px;font-weight:700;color:#fff;}
+.cp-mob{font-size:12px;color:rgba(255,255,255,.65);margin-top:3px;}
+.btn-cp-close{background:none;border:none;color:rgba(255,255,255,.6);font-size:20px;cursor:pointer;margin-left:auto;flex-shrink:0;}
+.pal-ov{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:200;display:none;}
+.pal-ov.on{display:block;}
+.pal-panel{position:fixed;top:0;right:0;width:min(290px,90vw);height:100vh;background:#fff;z-index:201;transform:translateX(100%);transition:transform .28s ease;display:flex;flex-direction:column;box-shadow:-4px 0 20px rgba(0,0,0,.2);}
+.pal-panel.on{transform:translateX(0);}
+.pal-hd{background:var(--navy);padding:12px 14px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;}
+.pal-hd h3{font-size:14px;font-weight:700;color:#fff;}
+.btn-pal-close{background:none;border:none;color:rgba(255,255,255,.65);font-size:20px;cursor:pointer;}
+.pal-meta{padding:7px 12px 4px;font-size:11px;color:var(--muted);border-bottom:1px solid var(--border);flex-shrink:0;}
+.pal-body{overflow-y:auto;flex:1;padding:10px 12px 20px;}
+.pal-sec-lbl{font-size:10.5px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;padding:9px 0 5px;display:flex;align-items:center;gap:5px;}
+.pal-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:5px;}
+.pb{aspect-ratio:1;border-radius:6px;border:1.5px solid var(--border);font-size:11.5px;font-weight:700;cursor:pointer;font-family:var(--font);background:#F5F7FA;color:var(--muted);transition:transform .1s;}
+.pb:active{transform:scale(.86);}
+.pb.p-ans{background:var(--ans);border-color:var(--ans);color:#fff;}
+.pb.p-vis{background:var(--nans);border-color:var(--nans);color:#fff;}
+.pb.p-cur{background:var(--gold);border-color:var(--gold);color:var(--navy2);}
+.modal-ov{position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:300;display:none;align-items:center;justify-content:center;padding:16px;}
+.modal-ov.on{display:flex;}
+.modal-box{background:#fff;border-radius:12px;max-width:340px;width:100%;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.3);}
+.modal-hd{background:var(--navy);padding:13px 16px;border-bottom:2px solid var(--gold);}
+.modal-hd h3{font-size:14px;font-weight:700;color:#fff;}
+.modal-bd{padding:14px 16px;font-size:13px;color:var(--text);}
+.m-stats{background:#F5F7FA;border-radius:8px;padding:10px 12px;margin-top:10px;font-size:12.5px;}
+.m-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;}
+.m-row:last-child{margin:0;}
+.m-dot{width:11px;height:11px;border-radius:50%;display:inline-block;margin-right:5px;}
+.modal-ft{display:flex;gap:8px;padding:0 16px 14px;}
+.btn-mc{flex:1;background:#F5F7FA;border:1.5px solid var(--border);border-radius:8px;padding:11px;font-family:var(--font);font-size:13px;font-weight:600;cursor:pointer;color:var(--muted);}
+.btn-mo{flex:1;background:var(--blue);border:none;border-radius:8px;padding:11px;font-family:var(--font);font-size:13px;font-weight:700;cursor:pointer;color:#fff;}
+#resultScreen{display:none;}
+.res-hdr{background:var(--navy2);padding:10px 13px;border-bottom:2px solid var(--gold);display:flex;align-items:center;position:sticky;top:0;z-index:10;}
+.res-hdr h2{font-size:13.5px;font-weight:700;color:#fff;}
+.res-bd{max-width:700px;margin:0 auto;padding:13px 12px 60px;}
+.res-hero{background:linear-gradient(135deg,var(--navy),var(--blue));border-radius:12px;padding:22px 16px;text-align:center;margin-bottom:12px;border:2px solid var(--gold);}
+.rcn{font-size:13px;color:rgba(255,255,255,.8);margin-bottom:4px;}
+.rscore{font-size:52px;font-weight:900;color:var(--gold);line-height:1;}
+.rlbl{font-size:11.5px;color:rgba(255,255,255,.6);margin-top:2px;}
+.rgrade{display:inline-block;background:var(--gold);color:var(--navy2);border-radius:20px;padding:4px 16px;font-size:12.5px;font-weight:700;margin-top:9px;}
+.rsgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-bottom:12px;}
+.rsc{background:#fff;border-radius:9px;padding:10px 5px;text-align:center;box-shadow:0 1px 6px rgba(0,0,0,.08);border:1px solid var(--border);}
+.rsc .rv{font-size:20px;font-weight:800;display:block;}
+.rsc .rl{font-size:9px;color:var(--muted);font-weight:600;margin-top:1px;}
+.rsc.rc .rv{color:var(--ans);}
+.rsc.rw .rv{color:var(--nans);}
+.rsc.rs .rv{color:#E65100;}
+.rsc.ra .rv{color:var(--blue);}
+.spc{background:#fff;border-radius:10px;box-shadow:0 1px 6px rgba(0,0,0,.08);overflow:hidden;margin-bottom:12px;border:1px solid var(--border);}
+.spc h3{background:var(--navy);color:var(--gold);padding:9px 13px;font-size:13px;font-weight:700;}
+.spcr{display:flex;align-items:center;padding:8px 13px;border-bottom:1px solid var(--border);gap:8px;}
+.spcr:last-child{border:none;}
+.spcn{flex:1;font-size:12px;font-weight:600;}
+.spcbw{width:80px;height:6px;background:var(--bg);border-radius:4px;overflow:hidden;}
+.spcbf{height:100%;border-radius:4px;}
+.spcv{font-size:12.5px;font-weight:700;min-width:42px;text-align:right;}
+.revsec{background:#fff;border-radius:10px;box-shadow:0 1px 6px rgba(0,0,0,.08);overflow:hidden;margin-bottom:10px;border:1px solid var(--border);}
+.revsh{padding:9px 13px;font-size:12.5px;font-weight:700;border-bottom:2px solid var(--border);cursor:pointer;display:flex;justify-content:space-between;align-items:center;}
+.revq{padding:10px 13px;border-bottom:1px solid #F5F7FA;}
+.revq:last-child{border:none;}
+.rqh{display:flex;gap:6px;margin-bottom:4px;}
+.rqn{font-size:10px;font-weight:700;background:var(--navy);color:var(--gold);border-radius:5px;padding:2px 6px;}
+.rqt{font-size:12px;font-weight:500;flex:1;line-height:1.5;}
+.rqt.od{font-family:var(--font-od);font-size:11.5px;line-height:1.75;}
+.rqa{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:4px;}
+.rat{font-size:11px;border-radius:5px;padding:2px 7px;font-weight:600;}
+.rat.yr{background:var(--ans-bg);color:var(--ans);}
+.rat.yw{background:var(--nans-bg);color:var(--nans);}
+.rat.ca{background:var(--ans-bg);color:var(--ans);}
+.rat.sk{background:var(--nvis-bg);color:var(--nvis);}
+.rqe{font-size:11.5px;color:#3E2700;background:#FFFDE7;border-radius:6px;padding:6px 9px;border-left:3px solid var(--gold);line-height:1.6;}
+.rqe.od{font-family:var(--font-od);font-size:11px;line-height:1.78;}
+.btn-ret{width:100%;background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;border:none;border-radius:9px;padding:13px;font-family:var(--font);font-size:14px;font-weight:700;cursor:pointer;margin-bottom:8px;}
+.tv.warn{color:#EF5350;animation:pulse 1s infinite;}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+@media(max-width:380px){.rsgrid{grid-template-columns:repeat(2,1fr)}.pal-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div id="startScreen">
+  <div class="s-top">
+    <div class="brand">Classes and Information</div>
+    <h1>OSSSC CRE-IV Full Length Mock Test 2026</h1>
+    <p>Mock Written Test for RI, ICDS Supervisor, VAW, JA, ARI, Amin and SFS</p>
+  </div>
+  <div class="s-body">
+    <div class="s-card">
+      <div class="s-hd">Exam Details</div>
+      <div class="s-bd">
+        <div class="igrid">
+          <div class="ig"><span class="v">100</span><span class="l">Questions</span></div>
+          <div class="ig"><span class="v">90</span><span class="l">Minutes</span></div>
+          <div class="ig"><span class="v">+1</span><span class="l">Correct</span></div>
+          <div class="ig"><span class="v">-0.25</span><span class="l">Wrong</span></div>
+        </div>
+        <table class="stbl">
+          <thead><tr><th>Section</th><th>Qs</th><th>Marks</th></tr></thead>
+          <tbody>
+            <tr><td><span class="sdot" style="background:#1565C0"></span>Mathematics</td><td>20</td><td>20</td></tr>
+            <tr><td><span class="sdot" style="background:#6A1B9A"></span>General Studies</td><td>20</td><td>20</td></tr>
+            <tr><td><span class="sdot" style="background:#00695C"></span>English</td><td>20</td><td>20</td></tr>
+            <tr><td><span class="sdot" style="background:#E65100"></span>Odia</td><td>15</td><td>15</td></tr>
+            <tr><td><span class="sdot" style="background:#4527A0"></span>Logical Reasoning</td><td>10</td><td>10</td></tr>
+            <tr><td><span class="sdot" style="background:#1B5E20"></span>Computer</td><td>15</td><td>15</td></tr>
+            <tr><td><strong>Total</strong></td><td><strong>100</strong></td><td><strong>100</strong></td></tr>
+          </tbody>
+        </table>
+        <div class="rules" style="margin-top:10px;">
+          <b>Instructions</b>
+          <ul>
+            <li>Click any option — instant correct/wrong feedback shown</li>
+            <li>Correct shown in green, wrong in red, explanation appears</li>
+            <li>Navigate using Previous / Next buttons at bottom</li>
+            <li>Timer auto-submits at 00:00</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="s-card">
+      <div class="s-hd">Candidate Details</div>
+      <div class="s-bd">
+        <div class="cf">
+          <label>Candidate Name</label>
+          <input type="text" id="iName" placeholder="Enter your full name" maxlength="60">
+          <label>Mobile Number</label>
+          <input type="tel" id="iMobile" placeholder="Enter 10-digit mobile number" maxlength="10" inputmode="numeric">
+        </div>
+        <button class="btn-begin" onclick="beginTest()">BEGIN EXAMINATION</button>
+      </div>
+    </div>
+    <div class="wm">Classes and Information | OSSSC CRE-IV Mock Test 2026</div>
+  </div>
+</div>
+
+<div id="examScreen">
+  <div class="ehdr">
+    <div class="ehdr-row">
+      <div class="ehdr-logo">CI</div>
+      <div class="ehdr-txt">
+        <div class="t1">OSSSC CRE-IV Mock Test 2026</div>
+        <div class="t2">RI &middot; ICDS &middot; VAW &middot; JA &middot; ARI &middot; Amin &middot; SFS</div>
+      </div>
+      <div class="ehdr-timer">
+        <span class="tv" id="tv">90:00</span>
+        <span class="tl">TIME LEFT</span>
+      </div>
+      <button class="cand-btn" id="candBtn" onclick="openCand()">C</button>
+      <button class="btn-sub-hdr" onclick="showModal()">SUBMIT</button>
+    </div>
+    <div class="tprog"><div class="tprog-fill" id="tpf"></div></div>
+  </div>
+  <div class="sec-wrap">
+    <div class="sec-tabs" id="secTabs"></div>
+    <button class="btn-pal" onclick="openPal()" title="Go to Question">&#8942;</button>
+  </div>
+  <div class="q-meta">
+    <div class="ql">Question Type: <strong>MCQ</strong></div>
+    <div class="qr">Correct: <b>+1</b> &nbsp;|&nbsp; Negative: <b>0.25</b></div>
+  </div>
+  <div class="q-body" id="qBody"></div>
+  <div class="bot-nav">
+    <div class="bot-nav-in">
+      <button class="btn-nav" id="btnPrev" onclick="nav(-1)">&#9664; Previous</button>
+      <button class="btn-nav" id="btnNext" onclick="nav(1)">Next &#9654;</button>
+    </div>
+  </div>
+</div>
+
+<div class="cand-ov" id="candOv" onclick="closeCand()"></div>
+<div class="cand-panel" id="candPanel">
+  <div class="cp-hd">
+    <div class="cp-av" id="cpAv">C</div>
+    <div>
+      <div class="cp-name" id="cpName">Candidate</div>
+      <div class="cp-mob" id="cpMob"></div>
+    </div>
+    <button class="btn-cp-close" onclick="closeCand()">&#10005;</button>
+  </div>
+</div>
+
+<div class="pal-ov" id="palOv" onclick="closePal()"></div>
+<div class="pal-panel" id="palPanel">
+  <div class="pal-hd">
+    <h3>Go to Question</h3>
+    <button class="btn-pal-close" onclick="closePal()">&#10005;</button>
+  </div>
+  <div class="pal-meta" id="palMeta">Answered: 0 / 100</div>
+  <div class="pal-body" id="palBody"></div>
+</div>
+
+<div class="modal-ov" id="submitModal">
+  <div class="modal-box">
+    <div class="modal-hd"><h3>Submit Examination</h3></div>
+    <div class="modal-bd">Are you sure? Answers cannot be changed after submission.
+      <div class="m-stats" id="mstats"></div>
+    </div>
+    <div class="modal-ft">
+      <button class="btn-mc" onclick="closeModal()">Go Back</button>
+      <button class="btn-mo" onclick="submitTest()">Submit Now</button>
+    </div>
+  </div>
+</div>
+
+<div id="resultScreen"></div>
+
+<script>
+'use strict';
+var SECS=[{id:'math',n:'Mathematics',color:'#1565C0'},{id:'gs',n:'General Studies',color:'#6A1B9A'},{id:'eng',n:'English',color:'#00695C'},{id:'odia',n:'Odia',color:'#E65100'},{id:'rsn',n:'Logical Reasoning',color:'#4527A0'},{id:'comp',n:'Computer',color:'#1B5E20'}];
+var L=['A','B','C','D'];
+var Q=[
+{id:1,s:'math',t:"A, B, and C can do a piece of work in 20, 30, and 60 days respectively. In how many days can A do the work if he is assisted by B and C on every third day?",o:["12 days","15 days","16 days","18 days"],a:1,e:"Total work=60 units. A=3,B=2,C=1 per day. 3-day cycle: 3+3+6=12 units. Cycles=60/12=5. Total days=5x3=15 days."},
+{id:2,s:'math',t:"The difference between Compound Interest and Simple Interest on a certain sum for 3 years at 10% per annum is Rs. 93. Find the principal sum.",o:["Rs. 3000","Rs. 3100","Rs. 3500","Rs. 4000"],a:0,e:"D = P(R/100)^2 x (300+R)/100. 93 = P x 0.01 x 3.1. Therefore P = Rs. 3000."},
+{id:3,s:'math',t:"A dishonest dealer professes to sell goods at cost price but uses a false weight of 900g for a kilogram. Find his gain percentage.",o:["10%","11.11% (11 1/9%)","12.5%","9.09%"],a:1,e:"Gain% = [Error / (True Value - Error)] x 100 = [100 / 900] x 100 = 11.11%."},
+{id:4,s:'math',t:"A vessel contains 60 litres of pure milk. 6 litres were drawn out and replaced by water. This process was repeated once more. How much pure milk is left?",o:["48.6 Litres","50 Litres","43.74 Litres","45.2 Litres"],a:0,e:"Final = 60 x (1 - 6/60)^2 = 60 x (9/10)^2 = 60 x 0.81 = 48.6 Litres."},
+{id:5,s:'math',t:"Two dice are thrown simultaneously. What is the probability that the sum of the numbers is a prime number?",o:["5/12","1/2","7/18","1/3"],a:0,e:"Prime sums: 2,3,5,7,11. Favorable outcomes = 15. Probability = 15/36 = 5/12."},
+{id:6,s:'math',t:"Two trains of lengths 140m and 160m are running at speeds of 60 km/hr and 40 km/hr on parallel tracks in opposite directions. Time to completely cross each other?",o:["10 sec","10.8 sec","11.2 sec","12 sec"],a:1,e:"Relative Speed = 100 km/hr = 250/9 m/s. Total Distance = 300m. Time = 300/(250/9) = 10.8 seconds."},
+{id:7,s:'math',t:"A solid metallic sphere of radius 8 cm is melted and recast into smaller spherical balls of radius 2 cm. How many balls can be made?",o:["16","32","64","128"],a:2,e:"N = R^3 / r^3 = 8^3 / 2^3 = 512/8 = 64 balls."},
+{id:8,s:'math',t:"A bag contains coins of Rs.1, 50-paise, and 25-paise in ratio 5:6:8. If total amount is Rs.210, find the number of 25-paise coins.",o:["120","140","168","200"],a:2,e:"5x + 3x + 2x = 210. 10x = 210. x = 21. 25-paise coins = 8 x 21 = 168."},
+{id:9,s:'math',t:"A, B, and C enter into a partnership with capital ratio 3:4:5. After 6 months, A doubled and B halved his investment. Total profit Rs.36,000. What is C's share?",o:["Rs. 10,000","Rs. 12,000","Rs. 14,400","Rs. 16,000"],a:2,e:"A=54, B=36, C=60. Ratio = 9:6:10. C's share = 36000 x (10/25) = Rs. 14,400."},
+{id:10,s:'math',t:"In an examination, 35% failed in Maths and 25% failed in English. If 10% failed in both, what percentage passed in both?",o:["40%","50%","60%","70%"],a:1,e:"Total failed = 35+25-10 = 50%. Passed in both = 100-50 = 50%."},
+{id:11,s:'math',t:"A boat takes double the time to go upstream as downstream for the same distance. If river current is 3 km/hr, what is boat speed in still water?",o:["6 km/hr","9 km/hr","12 km/hr","15 km/hr"],a:1,e:"B+3 = 2(B-3). B+3 = 2B-6. B = 9 km/hr."},
+{id:12,s:'math',t:"Three successive discounts of 10%, 20%, and 30% are equivalent to a single net discount of:",o:["60%","50.4%","49.6%","40.5%"],a:2,e:"After 10%: 90. After 20%: 72. After 30%: 50.4. Net discount = 100-50.4 = 49.6%."},
+{id:13,s:'math',t:"Pipe A fills a tank in 12 hours, Pipe B in 15 hours, Pipe C (emptying) drains it in 20 hours. If all three opened together, when will tank be filled?",o:["10 hours","12 hours","8 hours","15 hours"],a:0,e:"Net rate = 1/12 + 1/15 - 1/20 = 6/60 = 1/10. Time = 10 hours."},
+{id:14,s:'math',t:"The average of 11 numbers is 50. Average of first 6 is 49 and last 6 is 52. Find the 6th number.",o:["55","56","58","60"],a:1,e:"Sum(11)=550. Sum(first 6)=294. Sum(last 6)=312. 6th number = 294+312-550 = 56."},
+{id:15,s:'math',t:"A sum of money doubles itself in 8 years at Simple Interest. In how many years will it become 4 times at the same rate?",o:["16 years","24 years","32 years","20 years"],a:1,e:"To become 4 times: interest needed = 3P. Since P takes 8 years, 3P takes 3x8 = 24 years."},
+{id:16,s:'math',t:"The sum of two numbers is 36 and their HCF is 4. How many such pairs are mathematically possible?",o:["1","2","3","4"],a:2,e:"4a+4b=36. a+b=9. Co-prime pairs summing to 9: (1,8),(2,7),(4,5). Hence 3 pairs."},
+{id:17,s:'math',t:"The area of a rhombus is 150 sq.cm. If one of its diagonals is 10 cm, find the other diagonal.",o:["15 cm","20 cm","25 cm","30 cm"],a:3,e:"Area = 1/2 x d1 x d2. 150 = 1/2 x 10 x d2. d2 = 30 cm."},
+{id:18,s:'math',t:"Annual incomes of A and B are in ratio 3:2 and expenses in ratio 5:3. If each saves Rs.1000, what is A's annual income?",o:["Rs. 4000","Rs. 5000","Rs. 6000","Rs. 8000"],a:2,e:"3x-5y=1000 and 2x-3y=1000. Solving: x=2000. Income of A = 3x = Rs.6000."},
+{id:19,s:'math',t:"Each interior angle of a regular polygon is 144 degrees. How many sides does this polygon have?",o:["8","10","12","15"],a:1,e:"Exterior angle = 180-144 = 36 degrees. Number of sides = 360/36 = 10 sides (Decagon)."},
+{id:20,s:'math',t:"In triangle ABC, angles A, B, C are in ratio 2:3:4. What is the measure of the largest angle?",o:["60 degrees","80 degrees","100 degrees","120 degrees"],a:1,e:"Sum = 180. Total ratio = 9 parts. 1 part = 20. Largest = 4 x 20 = 80 degrees."},
+{id:21,s:'gs',t:"The concept of 'Procedure Established by Law' in the Indian Constitution was borrowed from the constitution of which country?",o:["United Kingdom","United States of America","Japan","Ireland"],a:2,e:"Article 21 'Procedure Established by Law' was adopted from the Japanese Constitution. USA has 'Due Process of Law'."},
+{id:22,s:'gs',t:"Which of the following is a Qualitative (Selective) credit control tool of the RBI rather than a Quantitative one?",o:["Cash Reserve Ratio (CRR)","Statutory Liquidity Ratio (SLR)","Open Market Operations (OMO)","Margin Requirements"],a:3,e:"CRR, SLR, OMO control overall money volume (Quantitative). Margin Requirements control credit flow to specific sectors (Qualitative)."},
+{id:23,s:'gs',t:"Which historic session of the INC endorsed the Gandhi-Irwin Pact and passed a landmark resolution on Fundamental Rights?",o:["Lahore Session, 1929","Karachi Session, 1931","Haripura Session, 1938","Tripuri Session, 1939"],a:1,e:"The Karachi Session of 1931, presided by Vallabhbhai Patel, outlined Congress's vision for a free India's socio-economic structure."},
+{id:24,s:'gs',t:"Who was the legendary leader of the Ghumusar Rebellion (1835-1837) in Odisha against the British East India Company?",o:["Surendra Sai","Buxi Jagabandhu","Dora Bisoi","Chakhi Khuntia"],a:2,e:"Chakra Bisoi and Dora Bisoi led the Kondhs in the Ghumusar uprising against British exploitation."},
+{id:25,s:'gs',t:"Which of the following indicators is NOT used by the UNDP to calculate the Human Development Index (HDI)?",o:["Life Expectancy at Birth","Expected Years of Schooling","Infant Mortality Rate","Gross National Income per capita"],a:2,e:"HDI uses three dimensions: Health (Life Expectancy), Education (years of schooling), and Standard of Living (GNI per capita). Infant Mortality Rate is NOT included."},
+{id:26,s:'gs',t:"In environmental ecology, what does the term Ecotone refer to?",o:["A zone of extreme pollution where no life exists","A transition area or boundary between two different biological communities","A species of plant found only in deserts","The deepest part of the ocean floor"],a:1,e:"Ecotone is a transition zone between two ecosystems (e.g., marshland). They are highly biologically diverse."},
+{id:27,s:'gs',t:"The famous Odia novel Chha Mana Atha Guntha, which highlighted exploitation of landless peasants by Zamindars, was written by:",o:["Radhanath Ray","Fakir Mohan Senapati","Gopinath Mohanty","Surendra Mohanty"],a:1,e:"Published in 1897, it is considered the first Indian novel to deal with exploitation of landless peasants by a feudal lord."},
+{id:28,s:'gs',t:"Which writ is issued to a public official commanding them to perform a public duty that they have failed or refused to perform?",o:["Habeas Corpus","Quo-Warranto","Certiorari","Mandamus"],a:3,e:"'Mandamus' means 'We Command.' It compels a public authority to perform its legal duty."},
+{id:29,s:'gs',t:"The majestic Barehipani waterfall, second highest in India, is located within which protected area in Odisha?",o:["Bhitarkanika National Park","Simlipal National Park","Satkosia Tiger Reserve","Karlapat Wildlife Sanctuary"],a:1,e:"Barehipani is a two-tiered waterfall located deep within Simlipal National Park in Mayurbhanj district."},
+{id:30,s:'gs',t:"In the context of the Indian economy, what does Stagflation specifically describe?",o:["High economic growth and rapidly falling prices","Slow economic growth, high unemployment, and rising prices","Rapid appreciation of the Indian Rupee","A phase where the government collects zero taxes"],a:1,e:"Stagflation: slow growth + high unemployment + high inflation simultaneously. Very difficult to solve."},
+{id:31,s:'gs',t:"Which Constitutional Amendment is widely referred to as the Mini Constitution of India?",o:["24th Amendment Act, 1971","42nd Amendment Act, 1976","44th Amendment Act, 1978","73rd Amendment Act, 1992"],a:1,e:"Passed during the Emergency, it added 'Secular' and 'Socialist' to the Preamble and introduced Fundamental Duties."},
+{id:32,s:'gs',t:"The Mansabdari System was a grading system to fix rank, salary, and military responsibilities. It was introduced by which Mughal Emperor?",o:["Babur","Humayun","Akbar","Aurangzeb"],a:2,e:"Introduced by Akbar, the Mansabdari System formed the basis of civil and military administration of the Mughal Empire."},
+{id:33,s:'gs',t:"Which schedule of the Indian Constitution deals exclusively with the allocation of seats in the Rajya Sabha?",o:["Second Schedule","Fourth Schedule","Sixth Schedule","Tenth Schedule"],a:1,e:"The 4th Schedule contains provisions regarding the allocation of seats in the Rajya Sabha for each State and Union Territory."},
+{id:34,s:'gs',t:"Who was the first Odia writer to be honored with the prestigious Jnanpith Award?",o:["Sachidananda Routray","Sitakant Mahapatra","Pratibha Ray","Gopinath Mohanty"],a:3,e:"Gopinath Mohanty won the Jnanpith Award in 1973 for his epic novel 'Mati Matal'."},
+{id:35,s:'gs',t:"The Goods and Services Tax (GST) subsumed multiple indirect taxes. Which of the following was NOT subsumed?",o:["Central Excise Duty","Value Added Tax (VAT)","Basic Customs Duty","Service Tax"],a:2,e:"Basic Customs Duty on imported goods is still levied separately outside of GST."},
+{id:36,s:'gs',t:"Who founded the Servants of India Society in 1905 with the objective of training national missionaries for the service of India?",o:["Swami Vivekananda","Gopal Krishna Gokhale","Bal Gangadhar Tilak","Raja Ram Mohan Roy"],a:1,e:"Gokhale founded the society in Pune to build a dedicated cadre of selfless workers for social development."},
+{id:37,s:'gs',t:"The Keibul Lamjao National Park, famous as the world's only floating national park, is located in:",o:["Assam","Meghalaya","Manipur","Mizoram"],a:2,e:"It is part of Loktak Lake in Manipur, characterized by floating masses of decomposed vegetation called phumdis."},
+{id:38,s:'gs',t:"The traditional Pattachitra art form of Odisha is originally painted on which medium?",o:["Palm leaves","Specially treated cloth canvas","Terracotta pots","Cave walls"],a:1,e:"Patta means cloth, Chitra means picture. Canvas is prepared by binding layers of cotton cloth with tamarind seed gum."},
+{id:39,s:'gs',t:"The Rushikulya river, renowned as a mass nesting site for Olive Ridley sea turtles, originates from which hill range in Odisha?",o:["Gonasika Hills","Rushimala Hills","Meghasani Hills","Niyamgiri Hills"],a:1,e:"The Rushikulya originates at about 1000m elevation from the Rushimala hills in Kandhamal district."},
+{id:40,s:'gs',t:"In the world of sports, the prestigious Thomas Cup is associated with which game?",o:["Table Tennis","Hockey","Badminton","Lawn Tennis"],a:2,e:"The Thomas Cup is the World Men's Team Championships in Badminton."},
+{id:41,s:'eng',t:"Choose the correct synonym for the word EPHEMERAL.",o:["Permanent","Transient","Mysterious","Enormous"],a:1,e:"Ephemeral means lasting a very short time. Synonyms: Transient, Fleeting, Temporary."},
+{id:42,s:'eng',t:"Choose the correct antonym for the word MITIGATE.",o:["Alleviate","Appease","Aggravate","Justify"],a:2,e:"Mitigate means to make less severe. Aggravate means to make worse - its direct antonym."},
+{id:43,s:'eng',t:"Identify the correctly spelt word:",o:["Bureacracy","Bureaucracy","Buraeucracy","Bureaucrasy"],a:1,e:"Correct: Bureaucracy (bureau + cracy). Refers to a system governed by state officials."},
+{id:44,s:'eng',t:"What is the meaning of the idiom A damp squib?",o:["A rainy day","A complete failure despite high expectations","An unexpected financial gain","A highly successful event"],a:1,e:"A squib (firework) that gets damp fails to explode. Metaphorically: an expected exciting event that disappoints."},
+{id:45,s:'eng',t:"Change the Voice: It is time to ring the bell.",o:["It is time the bell rings.","It is time for the bell to be rung.","It is time that the bell is ringing.","The bell is time to be rung."],a:1,e:"Structure: It is time + for + object + to be + V3. Active 'to ring' becomes Passive 'for the bell to be rung'."},
+{id:46,s:'eng',t:"One-word substitution: A person who is indifferent to both pleasure and pain",o:["Stoic","Ascetic","Cynic","Misanthrope"],a:0,e:"A Stoic endures pain or hardship without showing feelings. Ascetic = severe self-discipline. Cynic = distrusts motives."},
+{id:47,s:'eng',t:"Identify the grammatical error: The captain, along with his team members, are going to the stadium.",o:["The captain, along with","his team members,","are going","to the stadium."],a:2,e:"With 'along with', verb agrees with the first subject. 'The captain' (singular) should use 'is going', not 'are going'."},
+{id:48,s:'eng',t:"Change into Indirect Speech: He said, Alas! I am ruined.",o:["He said that alas he was ruined.","He exclaimed with sorrow that he was ruined.","He sadly said that I am ruined.","He exclaimed that he is ruined."],a:1,e:"For Alas! (grief): reporting verb becomes 'exclaimed with sorrow'; tense changes: am becomes was."},
+{id:49,s:'eng',t:"Fill in the blank with the correct Phrasal Verb: I cannot ___ this kind of insulting behavior anymore.",o:["put off","put out","put up with","put down"],a:2,e:"Put up with = tolerate/endure. Put off = postpone. Put out = extinguish."},
+{id:50,s:'eng',t:"Sentence Improvement: Had I known about the meeting, I ___ it.",o:["would attend","will attend","would have attended","attended"],a:2,e:"Third Conditional: Had + V3 leads to would have + V3. Correct: would have attended."},
+{id:51,s:'eng',t:"Choose the correct synonym for OBSEQUIOUS.",o:["Dominant","Sycophantic (Servile)","Rebellious","Arrogant"],a:1,e:"Obsequious means excessively obedient; a sycophant or yes-man."},
+{id:52,s:'eng',t:"Choose the correct antonym for GREGARIOUS.",o:["Sociable","Talkative","Introverted (Reclusive)","Cheerful"],a:2,e:"Gregarious = fond of company; sociable. Opposite = Introverted/Reclusive."},
+{id:53,s:'eng',t:"Fill in the blank: The accused was absolved ___ all the charges leveled against him.",o:["from","of","with","by"],a:1,e:"Absolve is always followed by 'of'. Fixed preposition: absolved of guilt/charges."},
+{id:54,s:'eng',t:"Identify the grammatical error: No sooner had the train left the station when it started raining heavily.",o:["No sooner had","left the station","when it started","raining heavily"],a:2,e:"No sooner is always paired with 'than', never 'when'. Correct: ...than it started raining."},
+{id:55,s:'eng',t:"Change the Voice: Who wrote this beautiful poem?",o:["By who is this beautiful poem written?","Who was this beautiful poem written by?","By whom was this beautiful poem written?","This beautiful poem was written by whom?"],a:2,e:"Interrogative with Who in passive starts with By whom + was + subject + V3. Correct: By whom was this beautiful poem written?"},
+{id:56,s:'eng',t:"One-word substitution: A person who collects or studies coins",o:["Philatelist","Numismatist","Ornithologist","Cartographer"],a:1,e:"Numismatist = coin collector. Philatelist = stamps. Ornithologist = birds. Cartographer = maps."},
+{id:57,s:'eng',t:"Fill in the blank: Although he is not wealthy, he is ___ honorable man.",o:["a","an","the","No article"],a:1,e:"Honorable has silent h and initial vowel sound o. So 'an' is the correct indefinite article."},
+{id:58,s:'eng',t:"What is the meaning of the idiom: To read between the lines?",o:["To read a book very fast","To find hidden meanings not directly stated","To skip pages while reading","To read aloud"],a:1,e:"It means to infer the true implied message of a text rather than taking it literally."},
+{id:59,s:'eng',t:"Complete the sentence: Scarcely had the minister started his speech ___ the crowd began to protest.",o:["than","then","when","but"],a:2,e:"Scarcely and Hardly are paired with 'when' or 'before', never 'than'. No sooner uses 'than'."},
+{id:60,s:'eng',t:"Identify the correctly spelt word:",o:["Assasination","Assassinaton","Assassination","Assassinnation"],a:2,e:"Correct: Assassination - double s twice: Ass+ass+i+nation."},
+{id:61,s:'odia',t:"\u0B28\u0B3F\u0B2E\u0B4D\u0B28\u0B32\u0B3F\u0B16\u0B3F\u0B24 \u0B36\u0B2C\u0B4D\u0B26\u0B17\u0B41\u0B21\u0B3C\u0B3F\u0B15 \u0B2E\u0B27\u0B4D\u0B2F\u0B30\u0B41 \u0B2C\u0B4D\u0B2F\u0B3E\u0B15\u0B30\u0B23\u0B17\u0B24 \u0B26\u0B43\u0B37\u0B4D\u0B1F\u0B3F\u0B30\u0B41 \u0B36\u0B41\u0B26\u0B4D\u0B27 \u0B36\u0B2C\u0B4D\u0B26\u0B1F\u0B3F \u0B2C\u0B3E\u0B1B:",o:["\u0B06\u0B28\u0B41\u0B38\u0B19\u0B4D\u0B17\u0B3F\u0B15","\u0B06\u0B28\u0B41\u0B38\u0B3E\u0B19\u0B4D\u0B17\u0B3F\u0B15","\u0B06\u0B28\u0B41\u0B37\u0B19\u0B4D\u0B17\u0B3F\u0B15","\u0B05\u0B28\u0B41\u0B37\u0B19\u0B4D\u0B17\u0B3F\u0B15"],a:2,e:"'\u0B06\u0B28\u0B41\u0B37\u0B19\u0B4D\u0B17\u0B3F\u0B15' is grammatically correct. It uses '\u0B37' (Murdhanya Sha) due to Satwa Bidhi rules in Odia grammar."},
+{id:62,s:'odia',t:"\u0B38\u0B28\u0B4D\u0B27\u0B3F \u0B2C\u0B3F\u0B1A\u0B4D\u0B1B\u0B47\u0B26 \u0B15\u0B30 \u2014 '\u0B2A\u0B41\u0B28\u0B30\u0B4D\u0B2C\u0B3E\u0B30'",o:["\u0B2A\u0B41\u0B28\u0B03 + \u0B2C\u0B3E\u0B30","\u0B2A\u0B41\u0B28\u0B30 + \u0B2C\u0B3E\u0B30","\u0B2A\u0B41\u0B28\u0B4D + \u0B2C\u0B3E\u0B30","\u0B2A\u0B41\u0B28 + \u0B30\u0B2C\u0B3E\u0B30"],a:0,e:"\u0B2A\u0B41\u0B28\u0B03 + \u0B2C\u0B3E\u0B30 = \u0B2A\u0B41\u0B28\u0B30\u0B4D\u0B2C\u0B3E\u0B30\u0964 This is Bisarga Sandhi - the Bisarga changes to 'r' (Ref) before a voiced consonant."},
+{id:63,s:'odia',t:"'\u0B2C\u0B40\u0B23\u0B3E\u0B2A\u0B3E\u0B23\u0B3F' \u0B2A\u0B26\u0B1F\u0B3F \u0B15\u0B47\u0B09\u0B01 \u0B38\u0B2E\u0B3E\u0B38 \u0B05\u0B28\u0B4D\u0B24\u0B30\u0B4D\u0B17\u0B24?",o:["\u0B24\u0B24\u0B4D\u200C\u0B2A\u0B41\u0B30\u0B41\u0B37 (Tatpurusha)","\u0B2C\u0B39\u0B41\u0B2C\u0B4D\u0B30\u0B40\u0B39\u0B3F (Bahuvrihi)","\u0B15\u0B30\u0B4D\u0B2E\u0B27\u0B3E\u0B30\u0B2F (Karmadharaya)","\u0B26\u0B4D\u0B35\u0B3F\u0B17\u0B41 (Dwigu)"],a:1,e:"\u0B2C\u0B40\u0B23\u0B3E \u0B05\u0B1B\u0B3F \u0B2A\u0B3E\u0B23\u0B3F\u0B30\u0B47 \u0B2F\u0B3E\u0B39\u0B3E\u0B30 = \u0B2C\u0B40\u0B23\u0B3E\u0B2A\u0B3E\u0B23\u0B3F\u0964 Refers to Goddess Saraswati (third entity) - classic Bahuvrihi Samasa."},
+{id:64,s:'odia',t:"'\u0B2C\u0B38\u0B28\u0B4D\u0B24 \u0B0B\u0B24\u0B41\u0B30\u0B47 \u0B17\u0B1B\u0B30\u0B47 \u0B28\u0B42\u0B06 \u0B2A\u0B24\u0B4D\u0B30 \u0B15\u0B05\u0B01\u0B33\u0B47' \u2014 '\u0B2C\u0B38\u0B28\u0B4D\u0B24 \u0B0B\u0B24\u0B41\u0B30\u0B47' \u0B15\u0B47\u0B09\u0B01 \u0B15\u0B3E\u0B30\u0B15?",o:["\u0B15\u0B30\u0B4D\u0B2E \u0B15\u0B3E\u0B30\u0B15","\u0B15\u0B30\u0B23 \u0B15\u0B3E\u0B30\u0B15","\u0B05\u0B2A\u0B3E\u0B26\u0B3E\u0B28 \u0B15\u0B3E\u0B30\u0B15","\u0B05\u0B27\u0B3F\u0B15\u0B30\u0B23 \u0B15\u0B3E\u0B30\u0B15"],a:3,e:"Adhikarana Karaka (Saptami Vibhakti) signifies time or place of action. 'Basanta Ruture' denotes time of action - Adhikarana Karaka."},
+{id:65,s:'odia',t:"'\u0B38\u0B02\u0B15\u0B40\u0B30\u0B4D\u0B23\u0B4D\u0B23' \u0B30 \u0B2C\u0B3F\u0B2A\u0B30\u0B40\u0B24 \u0B36\u0B2C\u0B4D\u0B26 \u0B15\u0B47\u0B09\u0B01\u0B1F\u0B3F?",o:["\u0B2A\u0B4D\u0B30\u0B36\u0B38\u0B4D\u0B24","\u0B2C\u0B3F\u0B38\u0B4D\u0B24\u0B43\u0B24","\u0B06\u0B2C\u0B26\u0B4D\u0B27","\u0B38\u0B02\u0B15\u0B41\u0B1A\u0B3F\u0B24"],a:0,e:"'\u0B38\u0B02\u0B15\u0B40\u0B30\u0B4D\u0B23\u0B4D\u0B23' means narrow. Grammatical opposite in formal Odia is '\u0B2A\u0B4D\u0B30\u0B36\u0B38\u0B4D\u0B24' (Prashasta - broad/wide/spacious)."},
+{id:66,s:'odia',t:"\u0B28\u0B3F\u0B2E\u0B4D\u0B28\u0B32\u0B3F\u0B16\u0B3F\u0B24 \u0B2E\u0B27\u0B4D\u0B2F\u0B30\u0B41 \u0B15\u0B47\u0B09\u0B01\u0B1F\u0B3F '\u0B38\u0B2E\u0B41\u0B26\u0B4D\u0B30' \u0B30 \u0B2A\u0B4D\u0B30\u0B24\u0B3F\u0B36\u0B2C\u0B4D\u0B26 \u0B28\u0B41\u0B39\u0B47\u0B01?",o:["\u0B30\u0B24\u0B4D\u0B28\u0B3E\u0B15\u0B30 (Ratnakara)","\u0B2A\u0B3E\u0B30\u0B3E\u0B2C\u0B3E\u0B30 (Parabara)","\u0B24\u0B30\u0B19\u0B4D\u0B17\u0B3F\u0B23\u0B40 (Tarangini)","\u0B2C\u0B3E\u0B30\u0B3F\u0B27\u0B3F (Baridhi)"],a:2,e:"'\u0B30\u0B24\u0B4D\u0B28\u0B3E\u0B15\u0B30', '\u0B2A\u0B3E\u0B30\u0B3E\u0B2C\u0B3E\u0B30', '\u0B2C\u0B3E\u0B30\u0B3F\u0B27\u0B3F' all mean Ocean. '\u0B24\u0B30\u0B19\u0B4D\u0B17\u0B3F\u0B23\u0B40' means a river - NOT an ocean synonym."},
+{id:67,s:'odia',t:"'\u0B17\u0B4B\u0B2C\u0B30 \u0B17\u0B23\u0B47\u0B36' \u2014 \u0B0F\u0B39\u0B3F \u0B30\u0B42\u0B22\u0B3C\u0B3F\u0B30 \u0B05\u0B30\u0B4D\u0B25 \u0B15'\u0B23?",o:["\u0B2A\u0B2C\u0B3F\u0B24\u0B4D\u0B30 \u0B2C\u0B4D\u0B2F\u0B15\u0B4D\u0B24\u0B3F","\u0B28\u0B3F\u0B30\u0B4D\u0B2C\u0B4B\u0B27 \u0B2C\u0B3E \u0B2E\u0B42\u0B30\u0B4D\u0B16","\u0B17\u0B23\u0B47\u0B36\u0B19\u0B4D\u0B15 \u0B2E\u0B42\u0B30\u0B4D\u0B24\u0B4D\u0B24\u0B3F","\u0B05\u0B24\u0B4D\u0B2F\u0B28\u0B4D\u0B24 \u0B1A\u0B3E\u0B32\u0B3E\u0B15"],a:1,e:"This idiom describes someone totally foolish, incompetent, or completely useless."},
+{id:68,s:'odia',t:"'\u0B2F\u0B47 \u0B15\u0B4C\u0B23\u0B38\u0B3F \u0B2A\u0B15\u0B4D\u0B37\u0B30\u0B47 \u0B2F\u0B4B\u0B17 \u0B26\u0B3F\u0B0F \u0B28\u0B3E\u0B39\u0B3F\u0B01' \u2014 \u0B0F\u0B15 \u0B2A\u0B26\u0B30\u0B47 \u0B2A\u0B4D\u0B30\u0B15\u0B3E\u0B36 \u0B15\u0B32\u0B47?",o:["\u0B2A\u0B15\u0B4D\u0B37\u0B2A\u0B3E\u0B24\u0B40","\u0B2C\u0B3F\u0B30\u0B4B\u0B27\u0B40","\u0B28\u0B3F\u0B30\u0B2A\u0B47\u0B15\u0B4D\u0B37","\u0B38\u0B4D\u0B35\u0B3E\u0B27\u0B40\u0B28"],a:2,e:"'\u0B28\u0B3F\u0B30\u0B2A\u0B47\u0B15\u0B4D\u0B37' (Nirapeksha) = neutral/impartial; someone who does not take sides in a dispute or conflict."},
+{id:69,s:'odia',t:"'\u0B2F\u0B47\u0B24\u0B47\u0B2C\u0B47\u0B33\u0B47 \u0B2C\u0B30\u0B4D\u0B37\u0B3E \u0B39\u0B47\u0B32\u0B3E, \u0B38\u0B47\u0B24\u0B47\u0B2C\u0B47\u0B33\u0B47 \u0B2E\u0B2F\u0B42\u0B30 \u0B28\u0B3E\u0B1A\u0B3F\u0B32\u0B3E' \u2014 \u0B0F\u0B39\u0B3E \u0B15\u0B47\u0B09\u0B01 \u0B2A\u0B4D\u0B30\u0B15\u0B3E\u0B30\u0B30 \u0B2C\u0B3E\u0B15\u0B4D\u0B2F?",o:["\u0B38\u0B30\u0B33 \u0B2C\u0B3E\u0B15\u0B4D\u0B2F (Simple)","\u0B2F\u0B4C\u0B17\u0B3F\u0B15 \u0B2C\u0B3E\u0B15\u0B4D\u0B2F (Compound)","\u0B1C\u0B1F\u0B3F\u0B33 \u0B2C\u0B3E\u0B15\u0B4D\u0B2F (Complex)","\u0B2A\u0B4D\u0B30\u0B36\u0B4D\u0B28\u0B2C\u0B3E\u0B1A\u0B15 \u0B2C\u0B3E\u0B15\u0B4D\u0B2F (Interrogative)"],a:2,e:"Jatila Bakya (Complex Sentence) - has a dependent clause and an independent main clause connected by correlatives."},
+{id:70,s:'odia',t:"'\u0B36\u0B30\u0B40\u0B30' \u0B36\u0B2C\u0B4D\u0B26\u0B30 \u0B2C\u0B3F\u0B36\u0B47\u0B37\u0B23 \u0B30\u0B42\u0B2A \u0B15'\u0B23 \u0B39\u0B47\u0B2C?",o:["\u0B36\u0B3E\u0B30\u0B3F\u0B30\u0B40\u0B15","\u0B36\u0B3E\u0B30\u0B40\u0B30\u0B3F\u0B15","\u0B36\u0B30\u0B40\u0B30\u0B3F\u0B15","\u0B36\u0B3E\u0B30\u0B40\u0B30"],a:1,e:"Using 'ika' Taddhita Pratyaya: Sharira becomes Sharirika (Physical). First 'ri' is Dirgha (long), second 'ri' is Hraswa (short)."},
+{id:71,s:'odia',t:"'\u0B24\u0B41\u0B23\u0B4D\u0B21 \u0B2C\u0B3E\u0B07\u0B26, \u0B38\u0B39\u0B38\u0B4D\u0B30 \u0B15\u0B4B\u0B36' \u2014 \u0B32\u0B4B\u0B15\u0B2C\u0B3E\u0B23\u0B40\u0B30 \u0B24\u0B3E\u0B24\u0B4D\u0B2A\u0B30\u0B4D\u0B2F\u0B4D\u0B2F \u0B15'\u0B23?",o:["\u0B32\u0B4B\u0B15 \u0B15\u0B25\u0B3E \u0B2C\u0B39\u0B41 \u0B26\u0B42\u0B30 \u0B2A\u0B4D\u0B30\u0B38\u0B3E\u0B30\u0B3F\u0B24 \u0B39\u0B41\u0B0F","\u0B09\u0B1A\u0B4D\u0B1A \u0B38\u0B4D\u0B35\u0B30\u0B30\u0B47 \u0B15\u0B25\u0B3E \u0B15\u0B39\u0B3F\u0B2C\u0B3E","\u0B2C\u0B39\u0B41\u0B24 \u0B26\u0B42\u0B30\u0B15\u0B41 \u0B2F\u0B3E\u0B24\u0B4D\u0B30\u0B3E \u0B15\u0B30\u0B3F\u0B2C\u0B3E","\u0B17\u0B41\u0B1C\u0B2C\u0B15\u0B41 \u0B2C\u0B3F\u0B36\u0B4D\u0B35\u0B3E\u0B38 \u0B28\u0B15\u0B30\u0B3F\u0B2C\u0B3E"],a:0,e:"News and gossip spread faster and farther than the sound of a beating drum. Word of mouth spreads very far."},
+{id:72,s:'odia',t:"'\u0B05\u0B28\u0B41\u0B30\u0B3E\u0B17' \u0B30 \u0B2C\u0B3F\u0B2A\u0B30\u0B40\u0B24 \u0B36\u0B2C\u0B4D\u0B26 \u0B15'\u0B23?",o:["\u0B30\u0B3E\u0B17","\u0B38\u0B4B\u0B39\u0B3E\u0B17","\u0B2C\u0B3F\u0B30\u0B3E\u0B17","\u0B05\u0B28\u0B41\u0B30\u0B15\u0B4D\u0B24\u0B3F"],a:2,e:"'\u0B05\u0B28\u0B41\u0B30\u0B3E\u0B17' means attachment/affection/love. Direct opposite is '\u0B2C\u0B3F\u0B30\u0B3E\u0B17' (Biraga - detachment/aversion)."},
+{id:73,s:'odia',t:"'\u0B26\u0B3F\u0B28\u0B15\u0B41 \u0B26\u0B3F\u0B28' \u2014 \u0B2A\u0B26\u0B1F\u0B3F \u0B15\u0B47\u0B09\u0B01 \u0B38\u0B2E\u0B3E\u0B38?",o:["\u0B26\u0B4D\u0B35\u0B3F\u0B17\u0B41 (Dwigu)","\u0B05\u0B2C\u0B4D\u0B2F\u0B2F\u0B40\u0B2D\u0B3E\u0B2C (Abyayibhava)","\u0B24\u0B24\u0B4D\u200C\u0B2A\u0B41\u0B30\u0B41\u0B37 (Tatpurusha)","\u0B26\u0B4D\u0B35\u0B28\u0B4D\u0B26\u0B4D\u0B35 (Dwandwa)"],a:1,e:"'\u0B26\u0B3F\u0B28\u0B15\u0B41 \u0B26\u0B3F\u0B28' expresses repetition (Bipsa) and starts with an indeclinable prefix - Abyayibhava Samasa."},
+{id:74,s:'odia',t:"\u0B13\u0B21\u0B3C\u0B3F\u0B06 \u0B2C\u0B30\u0B4D\u0B23\u0B4D\u0B23\u0B2E\u0B3E\u0B33\u0B3E\u0B30\u0B47 \u0B38\u0B30\u0B4D\u0B2C\u0B2E\u0B4B\u0B1F \u0B15\u0B47\u0B24\u0B4B\u0B1F\u0B3F '\u0B38\u0B4D\u0B35\u0B30\u0B2C\u0B30\u0B4D\u0B23\u0B4D\u0B23' (Vowels) \u0B30\u0B39\u0B3F\u0B1B\u0B3F?",o:["10","11","12","14"],a:1,e:"Modern Odia grammar officially recognizes 11 vowels: a, aa, i, ii, u, uu, ru, e, ai, o, au."},
+{id:75,s:'odia',t:"\u0B2C\u0B3E\u0B15\u0B4D\u0B2F\u0B30\u0B47 \u0B15\u0B4D\u0B30\u0B3F\u0B2F\u0B3E \u0B2A\u0B26 \u0B38\u0B39\u0B3F\u0B24 \u0B05\u0B28\u0B4D\u0B2F \u0B2A\u0B26\u0B2E\u0B3E\u0B28\u0B19\u0B4D\u0B15\u0B30 \u0B2F\u0B47\u0B09\u0B01 \u0B38\u0B2E\u0B4D\u0B2C\u0B28\u0B4D\u0B27 \u0B25\u0B3E\u0B0F \u0B24\u0B3E\u0B15\u0B41 \u0B15'\u0B23 \u0B15\u0B41\u0B39\u0B3E\u0B2F\u0B3E\u0B0F?",o:["\u0B38\u0B2E\u0B3E\u0B38","\u0B15\u0B3E\u0B30\u0B15","\u0B1B\u0B28\u0B4D\u0B26","\u0B05\u0B33\u0B19\u0B4D\u0B15\u0B3E\u0B30"],a:1,e:"'Karaka' = the direct syntactical relationship that nouns/pronouns have with the main verb in a sentence."},
+{id:76,s:'rsn',t:"Find the missing number in the given series: 0, 4, 18, 48, 100, ?",o:["144","160","180","200"],a:2,e:"Pattern: n^3 - n^2. 6th term: 6^3 - 6^2 = 216 - 36 = 180."},
+{id:77,s:'rsn',t:"In a certain coding system, if ORISSA is coded as NSHTTZ, how will TEMPLE be coded?",o:["UDNQMD","SDMOKD","UFNOQD","VEOQNF"],a:0,e:"Consonants +1, Vowels -1. T+1=U, E-1=D, M+1=N, P+1=Q, L+1=M, E-1=D. TEMPLE = UDNQMD."},
+{id:78,s:'rsn',t:"In a coded relation: A+B=father of, A-B=sister of, A*B=wife of, A/B=brother of. In P*Q+R-S, how is P related to S?",o:["Aunt","Mother","Grandmother","Sister"],a:1,e:"P*Q: P=wife of Q. Q+R: Q=father of R, so P=mother of R. R-S: R=sister of S. Therefore P=mother of S."},
+{id:79,s:'rsn',t:"Point A is 5 meters West of Point B. Point C is 12 meters North of Point B. What is the shortest straight-line distance between A and C?",o:["17 meters","15 meters","13 meters","10 meters"],a:2,e:"Right triangle: AB=5m, BC=12m. AC = sqrt(5^2 + 12^2) = sqrt(169) = 13 meters."},
+{id:80,s:'rsn',t:"Statements: 1.Only a few Rivers are Lakes. 2.All Lakes are Oceans. 3.No Ocean is a Sea. Conclusions: I.All Rivers being Oceans is a possibility. II.Some Lakes are Seas.",o:["Only Conclusion I follows","Only Conclusion II follows","Both Conclusions I and II follow","Neither Conclusion I nor II follows"],a:0,e:"Some Rivers are Lakes, hence Oceans. Remaining Rivers could also be Oceans - Conclusion I is possible. Conclusion II is false since no Ocean is a Sea."},
+{id:81,s:'rsn',t:"In a class of 45 students, Ayush is ranked 15th from the top and Rohan is ranked 21st from the bottom. How many students are sitting exactly between Ayush and Rohan?",o:["8","9","10","11"],a:1,e:"Positions from top (15) + from bottom (21) = 36. Students between = 45 - 36 = 9 students."},
+{id:82,s:'rsn',t:"At what exact angle are the minute hand and the hour hand of a clock inclined at 4:20 PM?",o:["0 degrees","10 degrees","15 degrees","20 degrees"],a:1,e:"Angle = |30H - 5.5M| = |30x4 - 5.5x20| = |120 - 110| = 10 degrees."},
+{id:83,s:'rsn',t:"Find the missing number in the matrix: Row 1: 5,4,41. Row 2: 7,3,58. Row 3: 10,2,?",o:["104","124","144","96"],a:0,e:"Logic: a^2 + b^2 = c. Row1: 25+16=41. Row2: 49+9=58. Row3: 100+4=104."},
+{id:84,s:'rsn',t:"Find the next term in the alphabetical series: AB, DEF, HIJK, ?",o:["MNOPQ","LMNO","NOPQR","PQRST"],a:0,e:"Groups of 2,3,4,5 letters. Skip one letter between groups: AB(skip C), DEF(skip G), HIJK(skip L), then MNOPQ."},
+{id:85,s:'rsn',t:"Statement: Please switch off your mobile phones inside the examination hall. Assumptions: I.Mobile phones may cause distractions or aid unfair practices. II.All candidates own a mobile phone.",o:["Only Assumption I is implicit","Only Assumption II is implicit","Both Assumptions I and II are implicit","Neither Assumption I nor II is implicit"],a:0,e:"Assumption I is valid (notice aims to prevent distractions/cheating). Assumption II is extreme - notice does not assume every candidate owns a phone."},
+{id:86,s:'comp',t:"In MS Excel, what is the specific purpose of the VLOOKUP function?",o:["To count the total number of visible cells in a column","To search for a specific value in the first column of a table and return a value from another column in the same row","To visually highlight duplicated data in a spreadsheet","To automatically translate text from one language to another"],a:1,e:"VLOOKUP (Vertical Lookup) pulls data from a large database - like a digital phonebook."},
+{id:87,s:'comp',t:"Which statement best describes the difference between a Computer Virus and a Computer Worm?",o:["A virus only attacks hardware while a worm attacks software","A virus needs a host program or human action to spread whereas a worm self-replicates and spreads automatically","A worm is used for ethical hacking while a virus is always malicious","There is no difference; they are exactly the same thing"],a:1,e:"Worms exploit network vulnerabilities to spread without human intervention, making them highly dangerous."},
+{id:88,s:'comp',t:"What is the primary function of Virtual Memory in a computer system?",o:["To permanently store the operating system files","To act as an extension of physical RAM by utilizing a portion of the Hard Drive when actual RAM is full","To create a virtual backup of the entire computer in the cloud","To run multiple operating systems at the same time"],a:1,e:"Virtual memory allows a computer to run larger or multiple applications even if physical RAM is temporarily exceeded."},
+{id:89,s:'comp',t:"What is the primary difference between IPv4 and IPv6 addresses?",o:["IPv4 is for wired networks; IPv6 is for wireless networks","IPv4 uses a 32-bit address format whereas IPv6 uses a 128-bit address format to support vastly more devices","IPv4 is a secure connection; IPv6 is unencrypted","IPv4 works only on Windows; IPv6 works only on Mac and Linux"],a:1,e:"IPv4: 32-bit (about 4.3 billion addresses). IPv6: 128-bit. Created because IPv4 addresses were exhausted."},
+{id:90,s:'comp',t:"Which MS Word feature allows you to create multiple personalized letters from a single template and a database like an Excel list?",o:["Macro Recording","Track Changes","Mail Merge","Format Painter"],a:2,e:"Mail Merge automatically pulls data (names, addresses) from a spreadsheet and inserts them into customized fields."},
+{id:91,s:'comp',t:"What is the direct keyboard shortcut in Windows to open Task Manager without going through Ctrl+Alt+Delete?",o:["Ctrl + Shift + Esc","Windows Key + T","Alt + Tab","Shift + F10"],a:0,e:"Ctrl+Shift+Esc instantly opens Task Manager to force-close frozen apps or monitor system performance."},
+{id:92,s:'comp',t:"Which high-speed memory is located physically closest to the CPU and stores frequently accessed data to speed up processing?",o:["Hard Disk Drive (HDD)","Random Access Memory (RAM)","Cache Memory","Read-Only Memory (ROM)"],a:2,e:"Cache memory (L1, L2, L3) is extremely fast SRAM built directly onto or very close to the CPU chip."},
+{id:93,s:'comp',t:"In MS PowerPoint, what is the purpose of the Slide Master view?",o:["To view all slides as tiny thumbnails on one screen","To set the default layout, fonts, colors, and background graphics for all slides simultaneously","To record a voiceover narration for the presentation","To print the slides as handouts"],a:1,e:"Slide Master ensures visual consistency. Changing a logo or font in Slide Master instantly updates every single slide."},
+{id:94,s:'comp',t:"When browsing the web, what specific role do Cookies play?",o:["They scan downloaded files for malware","They block unwanted pop-up advertisements","They are small text files saved by your browser to remember website preferences, login status, or shopping cart contents","They speed up internet connection by compressing images"],a:2,e:"Without cookies, websites would not remember you - you would have to log in every time you clicked a new link."},
+{id:95,s:'comp',t:"In computer programming, what does an Interpreter do differently from a Compiler?",o:["An interpreter converts images into text while a compiler converts text into images","An interpreter translates and executes source code line-by-line in real time whereas a compiler translates the entire program into machine code before executing it","An interpreter searches for viruses in the code","An interpreter is hardware while a compiler is software"],a:1,e:"Python uses interpreters (errors shown line by line). C++ uses compilers (creates a single exe file before execution)."},
+{id:96,s:'comp',t:"Which network topology offers the highest reliability because every computer is directly connected to every other computer?",o:["Star Topology","Ring Topology","Bus Topology","Mesh Topology"],a:3,e:"Full Mesh Topology: if one cable breaks, data takes another route. Highly fault-tolerant but expensive."},
+{id:97,s:'comp',t:"What does the term SaaS stand for in modern cloud computing?",o:["Storage as a Service","System as a Server","Software as a Service","Security as a Standard"],a:2,e:"SaaS: applications like Google Workspace and Microsoft 365 are hosted in the cloud and accessed over the internet."},
+{id:98,s:'comp',t:"In MS Excel, what is the primary function of a Pivot Table?",o:["To create complex 3D animations","To summarize, group, and analyze large datasets without altering the raw data","To lock specific cells with a password","To send automated emails"],a:1,e:"Pivot Tables allow users to drag and drop fields to instantly generate custom reports from large datasets."},
+{id:99,s:'comp',t:"What is the fundamental difference between the FAT32 and NTFS file systems in Windows?",o:["FAT32 is only for Macs; NTFS is for Windows","NTFS supports files larger than 4GB and offers advanced security and encryption whereas FAT32 has a strict 4GB individual file size limit","FAT32 is much faster than NTFS","NTFS cannot be used on USB flash drives"],a:1,e:"FAT32 has a 4GB file size limit. NTFS supports larger files and offers encryption and better security."},
+{id:100,s:'comp',t:"The protocol used to securely transfer data over the web, indicated by a padlock icon in the browser address bar, operates on which default port?",o:["Port 80","Port 21","Port 25","Port 443"],a:3,e:"HTTPS (Hypertext Transfer Protocol Secure) uses Port 443. Standard unencrypted HTTP uses Port 80."}
+];
+var UA=new Array(101).fill(-1),VQ=new Set();
+var cIdx=0,tLeft=5400,tTotal=5400,done=false,tInt=null,cName='',cMobile='';
+function g(id){return document.getElementById(id);}
+function gS(id){return SECS.find(function(s){return s.id===id;});}
+function beginTest(){
+  try{
+    cName=(g('iName').value||'').trim()||'Candidate';
+    cMobile=(g('iMobile').value||'').trim();
+    var ini=cName.split(' ').map(function(w){return w[0]||'';}).join('').toUpperCase().slice(0,2)||'C';
+    if(g('candBtn'))g('candBtn').textContent=ini;
+    if(g('cpAv'))g('cpAv').textContent=ini;
+    if(g('cpName'))g('cpName').textContent=cName;
+    if(g('cpMob'))g('cpMob').textContent=cMobile?'Mobile: '+cMobile:'Mobile not provided';
+    g('startScreen').style.display='none';
+    g('examScreen').style.display='block';
+    buildTabs();renderQ(0);buildPal();startTimer();
+    window.scrollTo(0,0);
+  }catch(e){console.warn('beginTest error:',e);}
+}
+function startTimer(){
+  updT();
+  tInt=setInterval(function(){
+    tLeft--;updT();
+    var pf=g('tpf');if(pf)pf.style.width=(tLeft/tTotal*100)+'%';
+    if(tLeft<=0){clearInterval(tInt);submitTest();}
+    if(tLeft<=300){var tv=g('tv');if(tv)tv.classList.add('warn');}
+  },1000);
+}
+function updT(){var m=Math.floor(tLeft/60),s=tLeft%60;var tv=g('tv');if(tv)tv.textContent=String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');}
+function buildTabs(){
+  var tabs=g('secTabs');if(!tabs)return;tabs.innerHTML='';
+  SECS.forEach(function(sec){
+    var b=document.createElement('button');b.className='stab';b.id='st'+sec.id;b.textContent=sec.n;
+    b.onclick=function(){var i=Q.findIndex(function(q){return q.s===sec.id;});if(i>=0)renderQ(i);};
+    tabs.appendChild(b);
+  });
+  updTabs();
+}
+function updTabs(){
+  document.querySelectorAll('.stab').forEach(function(b){b.classList.remove('active');});
+  var st=g('st'+Q[cIdx].s);
+  if(st){st.classList.add('active');try{st.scrollIntoView({block:'nearest',inline:'center',behavior:'smooth'});}catch(e){}}
+}
+function renderQ(idx){
+  try{
+    cIdx=idx;var q=Q[idx];VQ.add(q.id);
+    var sec=gS(q.s),isOd=(q.s==='odia'),ua=UA[q.id],answered=(ua!==-1);
+    var body=g('qBody');if(!body)return;
+    var oh=q.o.map(function(opt,i){
+      var cls='ropt'+(answered?' locked':'');
+      var ico='';
+      if(answered){
+        if(i===q.a){cls+=' correct';ico='<span class="rico">&#10004;</span>';}
+        else if(i===ua){cls+=' wrong';ico='<span class="rico">&#10008;</span>';}
+      }
+      var onclick=answered?'':' onclick="selOpt('+i+')"';
+      return '<div class="'+cls+'" id="ro'+i+'"'+onclick+'>'+
+        '<div class="rcirc"></div><span class="rlbl">'+L[i]+'.</span>'+
+        '<span class="rtxt'+(isOd?' od':'')+'">'+opt+'</span>'+ico+'</div>';
+    }).join('');
+    var eh='<div class="expbox'+(answered?' show':'')+'" id="expbox">'+
+      '<div class="exp-lbl">Explanation</div>'+
+      '<div class="exp-txt'+(isOd?' od':'')+'">'+q.e+'</div></div>';
+    body.innerHTML='<div class="q-num-bar"><span>Question No. '+q.id+'</span><span class="qsec">'+sec.n+'</span></div>'+
+      '<div class="q-card"><div class="q-text-wrap"><div class="q-text'+(isOd?' od':'')+'">'+
+      q.t.replace(/\n/g,'<br>')+'</div></div><div class="q-divider"></div>'+
+      '<div class="opts">'+oh+'</div>'+eh+'</div>';
+    var bp=g('btnPrev'),bn=g('btnNext');
+    if(bp)bp.disabled=(idx===0);if(bn)bn.disabled=(idx===99);
+    updTabs();updPal();window.scrollTo(0,0);
+  }catch(e){console.warn('renderQ error:',e);}
+}
+function selOpt(oi){
+  if(done)return;
+  var q=Q[cIdx];if(UA[q.id]!==-1)return;
+  UA[q.id]=oi;VQ.add(q.id);
+  var isC=(oi===q.a);
+  for(var i=0;i<4;i++){
+    var el=g('ro'+i);if(!el)continue;
+    el.classList.add('locked');el.onclick=null;
+    if(i===q.a){el.classList.add('correct');if(!el.querySelector('.rico')){var s1=document.createElement('span');s1.className='rico';s1.innerHTML='&#10004;';el.appendChild(s1);}}
+    if(i===oi&&!isC){el.classList.add('wrong');if(!el.querySelector('.rico')){var s2=document.createElement('span');s2.className='rico';s2.innerHTML='&#10008;';el.appendChild(s2);}}
+  }
+  var eb=g('expbox');if(eb)eb.classList.add('show');
+  updPal();
+}
+function nav(d){var n=cIdx+d;if(n>=0&&n<100)renderQ(n);}
+function buildPal(){
+  var body=g('palBody');if(!body)return;body.innerHTML='';
+  SECS.forEach(function(sec){
+    var h=document.createElement('div');h.className='pal-sec-lbl';
+    h.innerHTML='<span style="color:'+sec.color+';font-size:12px">&#9679;</span> '+sec.n;
+    body.appendChild(h);
+    var gr=document.createElement('div');gr.className='pal-grid';
+    Q.filter(function(q){return q.s===sec.id;}).forEach(function(q){
+      var b=document.createElement('button');b.className='pb';b.id='pb'+q.id;b.textContent=q.id;
+      (function(qid){b.onclick=function(){closePal();renderQ(Q.findIndex(function(qq){return qq.id===qid;}));};})(q.id);
+      gr.appendChild(b);
+    });
+    body.appendChild(gr);
+  });
+  updPal();
+}
+function updPal(){
+  var ans=UA.filter(function(x){return x!==-1;}).length;
+  var pm=g('palMeta');if(pm)pm.textContent='Answered: '+ans+' / 100';
+  for(var i=1;i<=100;i++){
+    var b=g('pb'+i);if(!b)continue;
+    b.className='pb';
+    if(i===Q[cIdx].id)b.classList.add('p-cur');
+    else if(UA[i]!==-1)b.classList.add('p-ans');
+    else if(VQ.has(i))b.classList.add('p-vis');
+  }
+}
+function openCand(){var o=g('candOv'),p=g('candPanel');if(o)o.classList.add('on');if(p)p.classList.add('on');}
+function closeCand(){var o=g('candOv'),p=g('candPanel');if(o)o.classList.remove('on');if(p)p.classList.remove('on');}
+function openPal(){var o=g('palOv'),p=g('palPanel');if(o)o.classList.add('on');if(p)p.classList.add('on');updPal();}
+function closePal(){var o=g('palOv'),p=g('palPanel');if(o)o.classList.remove('on');if(p)p.classList.remove('on');}
+function showModal(){
+  var ans=UA.filter(function(x){return x!==-1;}).length;
+  var ms=g('mstats');
+  if(ms)ms.innerHTML='<div class="m-row"><span><span class="m-dot" style="background:#2E7D32"></span>Answered</span><strong>'+ans+'</strong></div>'+
+    '<div class="m-row"><span><span class="m-dot" style="background:#C62828"></span>Not Answered</span><strong>'+(100-ans)+'</strong></div>'+
+    '<div style="margin-top:7px;font-size:11px;color:#888;font-style:italic;">Answers cannot be changed after submission.</div>';
+  var sm=g('submitModal');if(sm)sm.classList.add('on');
+}
+function closeModal(){var sm=g('submitModal');if(sm)sm.classList.remove('on');}
+function submitTest(){
+  try{
+    if(tInt){clearInterval(tInt);tInt=null;}done=true;closeModal();
+    var cor=0,wrg=0,skp=0,ss={};
+    SECS.forEach(function(s){ss[s.id]={c:0,w:0,tot:0};});
+    Q.forEach(function(q){
+      ss[q.s].tot++;
+      if(UA[q.id]===-1)skp++;
+      else if(UA[q.id]===q.a){cor++;ss[q.s].c++;}
+      else{wrg++;ss[q.s].w++;}
+    });
+    var score=parseFloat((cor-wrg*0.25).toFixed(2));
+    var acc=cor+wrg>0?Math.round(cor/(cor+wrg)*100):0;
+    try{
+      var am={};Q.forEach(function(q){am['Q'+q.id]=UA[q.id]===-1?'skipped':L[UA[q.id]];});
+      fetch('https://dxlggcspcgwsxqzvwokv.supabase.co/rest/v1/mock_test_results',{
+        method:'POST',
+        headers:{'Content-Type':'application/json','apikey':'sb_publishable_q3frZRxXmzaYLjcSfNaSKQ_vtumgE5q','Authorization':'Bearer sb_publishable_q3frZRxXmzaYLjcSfNaSKQ_vtumgE5q','Prefer':'return=minimal'},
+        body:JSON.stringify({candidate_name:cName,mobile:cMobile,score:score,correct:cor,wrong:wrg,skipped:skp,accuracy:acc,answers:am,time_taken:tTotal-tLeft})
+      }).catch(function(){});
+    }catch(e2){}
+    g('examScreen').style.display='none';
+    g('resultScreen').style.display='block';
+    buildResult(score,cor,wrg,skp,acc,ss);
+    window.scrollTo(0,0);
+  }catch(e){console.warn('submitTest error:',e);}
+}
+function buildResult(score,cor,wrg,skp,acc,ss){
+  try{
+    var grade=score>=75?'Excellent - Likely to Clear!':score>=60?'Good Performance':score>=45?'Average - Practice More':'Revise Thoroughly';
+    var rs=g('resultScreen');
+    rs.innerHTML='<div class="res-hdr"><h2>Examination Result - OSSSC CRE-IV 2026</h2></div>'+
+      '<div class="res-bd"><div class="res-hero"><div class="rcn">'+cName+(cMobile?' | '+cMobile:'')+'</div>'+
+      '<div class="rscore">'+score+'</div><div class="rlbl">Score out of 100 (After -0.25 Negative Marking)</div>'+
+      '<div class="rgrade">'+grade+'</div></div>'+
+      '<div class="rsgrid">'+
+      '<div class="rsc rc"><span class="rv">'+cor+'</span><span class="rl">Correct (+'+cor+')</span></div>'+
+      '<div class="rsc rw"><span class="rv">'+wrg+'</span><span class="rl">Wrong (-'+(wrg*0.25).toFixed(2)+')</span></div>'+
+      '<div class="rsc rs"><span class="rv">'+skp+'</span><span class="rl">Skipped</span></div>'+
+      '<div class="rsc ra"><span class="rv">'+acc+'%</span><span class="rl">Accuracy</span></div></div>'+
+      '<div class="spc"><h3>Section-wise Performance</h3>'+
+      SECS.map(function(sec){
+        var st=ss[sec.id],sc2=parseFloat((st.c-st.w*0.25).toFixed(2));
+        var pct=Math.max(0,Math.round(sc2/st.tot*100));
+        return '<div class="spcr"><div class="spcn" style="color:'+sec.color+'">'+sec.n+'</div>'+
+          '<div class="spcbw"><div class="spcbf" style="width:'+pct+'%;background:'+sec.color+'"></div></div>'+
+          '<div class="spcv" style="color:'+sec.color+'">'+sc2+'/'+st.tot+'</div></div>';
+      }).join('')+'</div><div id="revAcc"></div>'+
+      '<button class="btn-ret" onclick="retake()">Retake Test</button>'+
+      '<div class="wm">Classes and Information | OSSSC CRE-IV Mock Test 2026</div></div>';
+    var acc2=g('revAcc');if(!acc2)return;
+    SECS.forEach(function(sec){
+      var isOd=sec.id==='odia';
+      var div=document.createElement('div');div.className='revsec';
+      var h=document.createElement('div');h.className='revsh';
+      h.style.color=sec.color;h.style.borderLeft='4px solid '+sec.color;
+      var tgl=document.createElement('span');tgl.id='rtg'+sec.id;tgl.innerHTML='&#9660;';
+      h.appendChild(document.createTextNode(sec.n+' - Review '));h.appendChild(tgl);
+      var bd=document.createElement('div');bd.id='rb'+sec.id;
+      (function(bd2,sid){h.onclick=function(){
+        var op=bd2.style.display!=='none';bd2.style.display=op?'none':'block';
+        var t2=g('rtg'+sid);if(t2)t2.innerHTML=op?'&#9654;':'&#9660;';
+      };})(bd,sec.id);
+      Q.filter(function(q){return q.s===sec.id;}).forEach(function(q){
+        var ua=UA[q.id],isC=ua===q.a,isSk=ua===-1;
+        var qd=document.createElement('div');qd.className='revq';
+        qd.innerHTML='<div class="rqh"><span class="rqn">Q'+q.id+'</span><div class="rqt'+(isOd?' od':'')+'">'+q.t.replace(/\n/g,' ')+'</div></div>'+
+          '<div class="rqa">'+(isSk?'<span class="rat sk">Not Attempted</span>':
+          '<span class="rat '+(isC?'yr':'yw')+'">'+(isC?'Correct':'Wrong')+': '+L[ua]+') '+q.o[ua]+'</span>')+
+          (!isC&&!isSk?'<span class="rat ca">Correct: '+L[q.a]+') '+q.o[q.a]+'</span>':'')+
+          '</div><div class="rqe'+(isOd?' od':'')+'">'+q.e+'</div>';
+        bd.appendChild(qd);
+      });
+      div.appendChild(h);div.appendChild(bd);acc2.appendChild(div);
+    });
+  }catch(e){console.warn('buildResult error:',e);}
+}
+function retake(){
+  UA=new Array(101).fill(-1);VQ.clear();done=false;tLeft=5400;cIdx=0;
+  g('resultScreen').style.display='none';g('startScreen').style.display='block';
+  var tv=g('tv');if(tv){tv.textContent='90:00';tv.classList.remove('warn');}
+  var tpf=g('tpf');if(tpf)tpf.style.width='100%';
+  window.scrollTo(0,0);
+}
+</script>
+</body>
+</html>
